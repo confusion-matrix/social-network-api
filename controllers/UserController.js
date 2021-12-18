@@ -2,7 +2,7 @@ const { User } = require("../models");
 
 const UserController = {
     createUser({ body }, res) {
-        Users.create(body)
+        User.create(body)
             .then(dbUserData => res.json(dbUserData))
             .catch(err => res.status(400).json(err));
     },
@@ -63,7 +63,7 @@ const UserController = {
     },
     addFriend({params}, res) {
         User.findOneAndUpdate(
-            {_id: params.userId},
+            {_id: params.id},
             { $push: {friends: params.friendId}},
             { new: true, runValidators: true}
         )

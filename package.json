@@ -1,0 +1,24 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "UCR Bootcamp HW 18",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/confusion-matrix/social-network-api.git"
+  },
+  "author": "Carlos Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/confusion-matrix/social-network-api/issues"
+  },
+  "homepage": "https://github.com/confusion-matrix/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.2"
+  }
+}
